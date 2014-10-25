@@ -1,6 +1,8 @@
 mindplay/blowfish
 -----------------
 
+[![Build Status](https://travis-ci.org/mindplay-dk/blowfish.svg?branch=master)](https://travis-ci.org/mindplay-dk/blowfish)
+
 I want Blowfish password encryption, which is currently the best available.
 
 I also want:
