@@ -7,9 +7,9 @@ I want Blowfish password encryption, which is currently the best available.
 
 I also want:
 
-    * Strong, fast entropy: mcrypt when available, fall back to dev/urandom or `mt_rand()`
-    * Variable cost: prioritize speed vs cipher strength depending on your needs
-    * Ease of use and a small, simple dependency
+ * Strong, fast entropy: mcrypt when available, fall back to dev/urandom or `mt_rand()`
+ * Variable cost: prioritize speed vs cipher strength depending on your needs
+ * Ease of use and a small, simple dependency
 
 I do not want a large, complicated password encryption framework - I feel quite
 comfortable having a hard dependency on a public API consisting of two methods:
