@@ -1,0 +1,20 @@
+{
+    "name": "mindplay/blowfish",
+    "type": "library",
+    "description": "Wrapper around the Blowfish algorithm (for use in password encryption, etc.)",
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Rasmus Schultz",
+            "email": "rasmus@mindplay.dk"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "mindplay\\blowfish\\": "src/"
+        }
+    }
+}
