@@ -38,6 +38,8 @@ test(
     }
 );
 
+exit(status());
+
 // https://gist.github.com/mindplay-dk/4260582
 
 /**
@@ -85,29 +87,6 @@ function eq($value, $expected, $why = null)
         : "expected: " . format($expected, true) . ", got: " . format($value, true);
 
     ok($result, ($why === null ? $info : "$why ($info)"));
-}
-
-/**
- * @param string   $exception_type Exception type name
- * @param string   $why            description of assertion
- * @param callable $function       function expected to throw
- */
-function expect($exception_type, $why, $function)
-{
-    try {
-        call_user_func($function);
-    } catch (Exception $e) {
-        if ($e instanceof $exception_type) {
-            ok(true, $why, $e);
-            return;
-        } else {
-            $actual_type = get_class($e);
-            ok(false, "$why (expected $exception_type but $actual_type was thrown)");
-            return;
-        }
-    }
-
-    ok(false, "$why (expected exception $exception_type was NOT thrown)");
 }
 
 /**
